@@ -11,24 +11,30 @@
     <modules>
         <module>concurrent-programming</module>
         <module>mybatis-cache</module>
+        <module>refactor</module>
+        <module>clean-code</module>
     </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <guava.vesion>23.0</guava.vesion>
+        <lombok.version>1.18.22</lombok.version>
+        <hutool.version>5.7.17</hutool.version>
+        <fastjson.version>1.2.47</fastjson.version>
+        <jedis.version>3.7.1</jedis.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>5.6.7</version>
+            <version>${hutool.version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -38,12 +44,27 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.47</version>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>${jedis.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
             <version>9.0.50</version>
+        </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alphacephei</groupId>
+            <artifactId>vosk</artifactId>
+            <version>0.3.32</version>
         </dependency>
     </dependencies>
 </project>
