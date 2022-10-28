@@ -14,6 +14,7 @@
         <module>refactor</module>
         <module>clean-code</module>
         <module>algorithm</module>
+        <module>JVM</module>
     </modules>
 
     <properties>
